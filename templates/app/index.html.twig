@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+<h1 class="text-center mt-4 mb-4">Page d'accueil</h1>
+
+{% for item in slider %}
+
+<div class="card text-bg-dark">
+  <img src="{{asset('/upload/'~ item.photo)}}" class="d-block w-50" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <p class="card-text"><small>Last updated 3 mins ago</small></p>
+  </div>
+</div>
+
+
+{% endfor %}
+
+
+{% endblock %}

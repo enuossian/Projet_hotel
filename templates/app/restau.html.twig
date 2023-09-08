@@ -1,0 +1,42 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Notre restaurant{% endblock %}
+
+{% block body %}
+
+<h1 class="text-center mt-4 mb-4">Le restaurant</h1>
+ 
+<div class="card mb-3" style="max-width: 1000px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+    <img src="{{asset('/upload/restaurant1.jpg')}}" class="card img-fluid" alt="une table dréssée de manière jolie"> 
+    </div>
+    <div class="col-md-8">
+      <div class="card-body text-center">
+        <h5 class="card-title fs-2 mb-4 mt-3">LA BRASSERIE</h5>
+        <p class="card-text">Dans l’esprit des clubs londoniens, à l’ambiance feutrée et intimiste, le Bar est le lieu idéal pour un déjeuner sur le pouce. Il est aussi propice à une conversation autour d’un verre à tout moment de la journée.</p>
+        <p>Laissez-vous tenter par une pause sucrée dans l'après-midi, et découvrez notre offre "Tea time", composée d'une boisson chaude et d'un délicieux dessert au choix à la carte.</p>
+        <p>En soirée, lumière tamisée, boiseries et fauteuils accueillants tapissés de velours rouge, vous dégusterez les cocktails signatures proposés par notre équipe de Barmen … Ici, on prend le temps.</p>
+        <div class="text-center"><button class="btn btn-outline-dark mt-4">Découvrir la carte</button></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-3" style="max-width: 1000px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+    <img src="{{asset('/upload/restaurant2.jpg')}}" class="card img-fluid" alt="une table dréssée de manière jolie"> 
+    </div>
+    <div class="col-md-8">
+      <div class="card-body text-center">
+        <h5 class="card-title fs-2 mb-4 mt-3">LE RESTAURANT</h5>
+        <p class="card-text">L’élégance du lieu avec d’imposantes hauteurs sous plafond, de riches moulures et d’immenses fenêtres baignant le restaurant de lumière, inspirent notre chef de cuisine à vous proposer une carte riche en saveurs. Découvrez notre cuisine gastronomique française, avec des produits frais et de saison soigneusement sélectionnés, qui ravira tous les palais.</p>
+        <p>Pour le déjeuner, laissez-vous tenter par un menu à 49€ (entrée-plat-café) ou les suggestions du chef à la carte. Pour le dîner, laissez-vous charmer par nos plats à la carte, gourmands et élaborés avec soin.</p>
+        <p>Horaires d'ouverture :- Petit-déjeuner de 7h à 10h30 (ouvert jusqu'à 11h les week-ends et jours fériés)- Déjeuner de 12h00 à 14h30- Dîner de 19h30 à 21h30 - dernière prise de commande à 21h00</p>
+      <div class="text-center"><button class="btn btn-outline-dark mt-4">Découvrir la carte</button></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

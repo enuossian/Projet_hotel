@@ -1,0 +1,28 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Articles{% endblock %}
+
+{% block body %}
+<h1 class="text-center mt-4 mb-4">Les chambres</h1>
+
+<div class="container">
+    <section class="row articles">
+    <div class="container mt-4 mb-4">
+        <p>Luxueuses et raffinées, nos chambres vous invitent à la détente dans le plus grand confort et la plus stricte intimité. Profitez d'un endroit paisible où vous ressourcer tout au long de votre séjour.</p>
+    </div>
+    
+    {% for item in chambres %}
+    
+    <div class="card mb-3 w-50">
+  <img src="{{asset('/upload/'~ item.photo)}}" class="card img-fluid" alt="une chambre d'hotel avec un lit au centre">
+  <div class="card-body">
+    <h5 class="card-title mt-2">{{item.titre}}</h5>
+    <p class="card-text mt-4">{{item.descriptioncourte}}</p>
+    <p>{{item.prixjournalier}} €/nuit</p>
+    <a href="{{path('commande')}}" class="btn btn-outline-dark mt-3">Détails</a>
+  </div>
+</div>
+    {% endfor %}
+    </section>
+</div>
+{% endblock %}

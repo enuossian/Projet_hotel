@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Formulaire de commande{% endblock %}
+
+{% block body %}
+
+<h1 class="text-center mt-4 mb-5">Formulaire de commande</h1>
+
+<div class="container col-6">
+
+{{form_start(form)}}
+    {{form_row(form.nom)}}
+    {{form_row(form.prenom)}}
+    {{form_row(form.telephone)}}
+    {{form_row(form.email)}}
+    
+{{form_end(form)}}
+<button type="submit" class="btn btn-outline-dark">Envoyer</button>
+
+</div>
+
+{% endblock %}
